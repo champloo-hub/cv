@@ -96,6 +96,7 @@ h6 {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 1;
   height: 30px;
   width: 30px;
   background-image: url("../img/back-to-top.svg");
@@ -233,6 +234,17 @@ h6 {
       align-items: center;
       padding: 20px 10px; } }
 
+.headline {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px; }
+  .list__item + .list__item {
+    margin-top: 5px; }
+
 .footer {
   position: relative;
   padding: 20px;
@@ -254,8 +266,9 @@ h6 {
   .footer__tel, .footer__link {
     font-size: 16px;
     color: #000; }
-  .footer__copy {
-    font-size: 12px; }
+  .footer__copy, .footer__link-s {
+    font-size: 12px;
+    color: #000; }
 
 .profile {
   display: flex;
@@ -290,6 +303,40 @@ h6 {
     .profile__intro {
       width: 50%; } }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  margin-bottom: 20px; }
+
+.skill {
+  min-width: 90px;
+  max-width: 90px;
+  margin: 0 5px; }
+  @media (min-width: 768px) {
+    .skill {
+      min-width: 120px;
+      max-width: 120px;
+      margin: 0 10px; } }
+  @media (min-width: 1020px) {
+    .skill {
+      min-width: 160px;
+      max-width: 160px;
+      margin: 0 15px; } }
+  .skill__head {
+    text-align: center;
+    margin-bottom: 5px; }
+  .skill-bar {
+    position: relative;
+    height: 3px;
+    background-color: #c7c7c7; }
+    .skill-bar__progress {
+      position: absolute;
+      height: 100%;
+      background-color: #000;
+      transition: all .3s; }
+
 @media (min-width: 768px) {
   .visible-s {
     display: none !important; } }
@@ -312,5 +359,8 @@ h6 {
 
 .bg-yellow {
   background-color: #ff0 !important; }
+
+.txt-c {
+  text-align: center; }
 
 /*# sourceMappingURL=cv.css.map */

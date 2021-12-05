@@ -23,3 +23,8 @@
   &-light-green { background-color: $light-green  !important; }
   &-yellow      { background-color: $yellow       !important; }
 }
+
+// Text Formatting
+.txt {
+  &-c { text-align: center; }
+}
