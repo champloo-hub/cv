@@ -8,3 +8,20 @@
     padding: 20px 10px;
   }
 }
+
+.headline {
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  margin-bottom: 20px;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+
+  &__item {
+    + .list__item {
+      margin-top: 5px;
+    }
+  }
+}
