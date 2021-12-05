@@ -1,0 +1,38 @@
+.footer {
+  position: relative;
+  padding: 20px;
+  border-top: 1px solid $secondary;
+
+  @media(min-width: $screen-m) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__item {
+    + .footer__item {
+      @media (max-width: $screen-s) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__head {
+    font-size: 17px;
+    font-weight: $font-weight-bold;
+
+    @media (min-width: $screen-l) {
+      font-size: 18px;
+    }
+  }
+
+  &__tel,
+  &__link {
+    font-size: 16px;
+    color: $primary;
+  }
+
+  &__copy {
+    font-size: 12px;
+  }
+}

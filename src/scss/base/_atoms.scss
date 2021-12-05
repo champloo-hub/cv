@@ -1,0 +1,16 @@
+// Buttons
+.scroll-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  background-image: url('../img/back-to-top.svg');
+  background-size: 50%;
+  border: 1px solid $secondary;
+  border-radius: 2px;
+
+  @media (min-width: $screen-m) {
+    top: -50px;
+  }
+}

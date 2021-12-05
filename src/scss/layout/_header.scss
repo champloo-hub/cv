@@ -1,0 +1,133 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+  &__profile {
+    position: relative;
+    padding-left: 40px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: $light-brown;
+      border-radius: 50%;
+    }
+
+    @media (max-width: $screen-s) {
+      opacity: 1;
+      transition: all .6s;
+
+      @at-root {
+        body {
+          &.header-nav-open {
+            .header {
+              box-shadow: none;
+
+              &__profile {
+                opacity: 0;
+                transition: all .3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-nav {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    display: grid;
+    place-items: center;
+    background-color: $background;
+    opacity: 0;
+    transition: all 1s;
+
+    @at-root {
+      body {
+        &.header-nav-open {
+          overflow: hidden;
+
+          .header-nav {
+            top: 84px;
+            bottom: 0;
+            opacity: 1;
+            transition: all .5s;
+          }
+        }
+      }
+    }
+
+    &__item {
+      font-size: 22px;
+      color: $primary;
+    }
+  }
+
+  &__menu-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+
+    &-bar {
+      height: 2px;
+      width: 100%;
+      background-color: $primary;
+      border-radius: 2px;
+      transition: all .3s;
+    }
+
+    &--open {
+      .header__menu-s-bar {
+        transition: all .3s;
+
+        &:first-of-type { transform: translateY(10px) translateY(-50%) rotate(-45deg); }
+        &:nth-of-type(2) { width: 0; opacity: 0; }
+        &:last-of-type { transform: translateY(-10px) translateY(50%) rotate(45deg); }
+      }
+    }
+  }
+
+  &__menu-ml {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      height: 24px;
+      align-items: center;
+
+      + .header__menu-ml-item {
+        border-left: 1px solid $primary;
+        padding-left: 10px;
+        margin-left: 10px;
+      }
+    }
+
+    &-link {
+      color: $primary;
+
+      @media (min-width: $screen-l) {
+        font-size: 16px;
+      }
+    }
+  }
+}

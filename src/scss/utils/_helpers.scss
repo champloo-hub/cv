@@ -1,0 +1,25 @@
+// Visibility
+.visible {
+  &-s {
+    @media (min-width: $screen-m) {
+      display: none !important;
+    }
+  }
+}
+
+.hidden {
+  &-s {
+    @media (max-width: $screen-s) {
+      display: none !important;
+    }
+  }
+}
+
+// Background Colors
+.bg {
+  &-light-brown { background-color: $light-brown  !important; }
+  &-light-red   { background-color: $light-red    !important; }
+  &-light-blue  { background-color: $light-blue   !important; }
+  &-light-green { background-color: $light-green  !important; }
+  &-yellow      { background-color: $yellow       !important; }
+}
