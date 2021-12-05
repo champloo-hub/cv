@@ -1,0 +1,31 @@
+// Buttons
+.profile-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 85px;
+    width: 85px;
+    font-size: 11px;
+    font-weight: $font-weight-bold;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 50%;
+
+    + .profile-nav__item {
+      margin-left: 10px;
+    }
+
+    @media (min-width: $screen-l) {
+      height: 140px;
+      width: 140px;
+      font-size: 14px;
+    }
+  }
+}

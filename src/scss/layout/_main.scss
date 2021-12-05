@@ -1,0 +1,10 @@
+.main {
+  position: relative;
+  padding: 10px 10px 20px;
+
+  @media (min-width: $screen-m) {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+  }
+}

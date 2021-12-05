@@ -1,0 +1,54 @@
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: $transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a, a:active, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+img {
+  border: 0;
+  border-style: none;
+  vertical-align: middle;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+article, footer, header, main, menu, nav, section {
+  display: block;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}

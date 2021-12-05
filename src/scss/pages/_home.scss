@@ -1,0 +1,45 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $screen-m) {
+    flex-direction: row;
+  }
+
+  &__avatar {
+    order: 2;
+
+    @media (max-width: $screen-s) {
+      align-self: center;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 50%;
+    }
+  }
+
+  &__img {
+    max-height: 280px;
+    max-width: 280px;
+    border-radius: 50%;
+
+    @media (min-width: $screen-l) {
+      display: block;
+      min-height: 480px;
+      min-width: 480px;
+      margin: 0 auto;
+    }
+  }
+
+  &__intro {
+    @media (min-width: $screen-m) {
+      order: 2;
+      padding-left: 10px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 50%;
+    }
+  }
+}

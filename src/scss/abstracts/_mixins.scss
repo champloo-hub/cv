@@ -1,0 +1,16 @@
+// Gradients
+@mixin gradient-y($top, $bottom, $important:"") {
+  background: $top unquote($important);
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%) unquote($important);
+  background: -webkit-linear-gradient(top, $top 0%,$bottom 100%) unquote($important);
+  background: linear-gradient(to bottom, $top 0%,$bottom 100%) unquote($important);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#{$top}, endColorstr=#{$bottom},GradientType=0 ) unquote($important);
+}
+
+@mixin gradient-x($left, $right, $important:"") {
+  background: $left unquote($important);
+  background: -moz-linear-gradient(left, $left 0%, $right 100%) unquote($important);
+  background: -webkit-linear-gradient(left, $left 0%,$right 100%) unquote($important);
+  background: linear-gradient(to right, $left 0%,$right 100%) unquote($important);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#{$left}, endColorstr=#{$right},GradientType=1 ) unquote($important);
+}
