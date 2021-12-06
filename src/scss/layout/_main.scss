@@ -27,14 +27,23 @@
           font-size: 14px;
         }
       }
+
+      .list__item {
+        font-size: 12px;
+
+        @media (min-width: $screen-l) {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
 
 .plain {
   font-size: 12px;
+  margin-bottom: 10px;
 
-  @media (min-width: $screen-m) {
+  @media (min-width: $screen-l) {
     font-size: 14px;
   }
 }
@@ -42,6 +51,7 @@
 .list {
   list-style-type: disc;
   padding-left: 20px;
+  margin-bottom: 10px;
 
   &__item {
     + .list__item {
