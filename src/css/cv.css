@@ -92,6 +92,10 @@ h6 {
   font-size: 12px;
   font-weight: 400; }
 
+.icon-s {
+  height: 22px;
+  width: 22px; }
+
 .scroll-top {
   position: absolute;
   top: 20px;
@@ -106,6 +110,14 @@ h6 {
   @media (min-width: 768px) {
     .scroll-top {
       top: -50px; } }
+
+.input-submit {
+  height: 40px;
+  background-color: #f3f3f3;
+  font-weight: 700;
+  padding: 0 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px; }
 
 .profile-nav {
   display: flex;
@@ -337,6 +349,35 @@ h6 {
       background-color: #000;
       transition: all .3s; }
 
+.input-row {
+  display: flex;
+  flex-direction: column; }
+  .input-row + .input-row {
+    margin-top: 20px; }
+
+.input-label {
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+.input-form {
+  height: 30px;
+  max-width: 320px;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+  padding-left: 10px; }
+
+.input-content {
+  min-height: 150px;
+  max-width: 640px;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+  padding: 10px; }
+
+.scls {
+  display: flex; }
+  .scls__link + .scls__link {
+    margin-left: 10px; }
+
 @media (min-width: 768px) {
   .visible-s {
     display: none !important; } }
@@ -362,5 +403,11 @@ h6 {
 
 .txt-c {
   text-align: center; }
+
+.mt20 {
+  margin-top: 20px !important; }
+
+.my20 {
+  margin: 20px 0   !important; }
 
 /*# sourceMappingURL=cv.css.map */
