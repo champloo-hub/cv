@@ -409,7 +409,10 @@ h6 {
     border: 1px solid #000; }
     @media (max-width: 767px) {
       .experience:after {
-        left: 10px; } }
+        left: 10.5px; } }
+    @media (min-width: 768px) {
+      .experience:after {
+        margin-left: 1px; } }
   .experience-wrap {
     position: relative;
     padding: 0 25px 0 40px; }
@@ -417,6 +420,8 @@ h6 {
       .experience-wrap {
         width: 50%;
         padding: 0 20px 0 10px; } }
+    .experience-wrap + .experience-wrap {
+      margin-top: 20px; }
     .experience-wrap:before {
       content: '';
       position: absolute;
@@ -444,7 +449,7 @@ h6 {
       @media (min-width: 768px) {
         .experience-content:after {
           left: auto;
-          right: -37px; } }
+          right: -38px; } }
 
 .left {
   left: 0; }
@@ -489,7 +494,7 @@ h6 {
         border-color: transparent #c7c7c7 transparent transparent; } }
   @media (min-width: 768px) {
     .right .experience-content:after {
-      left: -40px; } }
+      left: -39px; } }
 
 @media (min-width: 768px) {
   .visible-s {
