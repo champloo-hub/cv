@@ -13,6 +13,30 @@
   font-size: 18px;
   font-weight: $font-weight-bold;
   margin-bottom: 20px;
+
+  @at-root {
+    .exp {
+      .headline {
+        margin-bottom: 10px;
+
+        @media (max-width: $screen-m-max) {
+          font-size: 12px;
+        }
+
+        @media (min-width: $screen-l) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.plain {
+  font-size: 12px;
+
+  @media (min-width: $screen-m) {
+    font-size: 14px;
+  }
 }
 
 .list {
