@@ -28,3 +28,9 @@
 .txt {
   &-c { text-align: center; }
 }
+
+// Distances and Spacings
+.m {
+  &t20 { margin-top: 20px !important;}
+  &y20 { margin: 20px 0   !important;}
+}

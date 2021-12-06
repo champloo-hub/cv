@@ -51,24 +51,46 @@
 
       <main class="main">
         <div class="container">
-          <div class="profile">
-            <div class="profile__avatar">
-              <img class="profile__img" src="img/profile-avatar.jpg" alt="Profile image">
+          <p class="headline">Contact Form</p>
+
+          <form class="contact">
+            <div class="input-row">
+              <label class="input-label" for="first-name">First Name</label>
+              <input class="input-form" id="first-name" type="text" placeholder="Your first name here">
             </div>
 
-            <div class="profile__intro">
-              <h1>Stefan Markić</h1>
-              <h2>Frontend Developer, CSS Master</h2>
-              <h3>My close specialty in layout frontend development makes me stand out as CSS Master.</h3>
-
-              <nav class="profile-nav">
-                <a class="profile-nav__item bg-light-brown" href="docs/Stefan_Markic_Frontend_Developer_CSS_Master_Resume.pdf" title="Download CV">Download CV</a>
-                <a class="profile-nav__item bg-light-red" href="skills.html" title="Skills and Competencies">Skills and Competencies</a>
-                <a class="profile-nav__item bg-light-blue" href="education.html" title="Education">Education</a>
-                <a class="profile-nav__item bg-light-green" href="work.html" title="Work Experience">Work Experience</a>
-                <a class="profile-nav__item bg-yellow" href="contact.html" title="Contact">Contact</a>
-              </nav>
+            <div class="input-row">
+              <label class="input-label" for="last-name">Last Name</label>
+              <input class="input-form" id="last-name" type="text" placeholder="Your last name here">
             </div>
+
+            <div class="input-row">
+              <label class="input-label" for="email">Email</label>
+              <input class="input-form" id="email" type="email" placeholder="Your email here">
+            </div>
+
+            <div class="input-row">
+              <label class="input-label" for="content">Email</label>
+              <textarea class="input-content" id="content" name="content" placeholder="Your message here"></textarea>
+            </div>
+
+            <button class="input-submit my20">Send Message</button>
+          </form>
+
+          <p class="headline">Social Networks</p>
+
+          <div class="scls">
+            <a class="scls__link" href="null:;" title="Facebook">
+              <img class="scls__img icon-s" src="img/facebook.svg" alt="Facebook">
+            </a>
+
+            <a class="scls__link" href="null:;" title="Instagram">
+              <img class="scls__img icon-s" src="img/instagram.svg" alt="Instagram">
+            </a>
+
+            <a class="scls__link" href="null:;" title="Instagram">
+              <img class="scls__img icon-s" src="img/viber.svg" alt="Instagram">
+            </a>
           </div>
         </div>
       </main>

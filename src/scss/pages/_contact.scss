@@ -1,0 +1,41 @@
+.input {
+  &-row {
+    display: flex;
+    flex-direction: column;
+
+    + .input-row {
+      margin-top: 20px;
+    }
+  }
+
+  &-label {
+    font-weight: $font-weight-bold;
+    margin-bottom: 5px;
+  }
+
+  &-form {
+    height: 30px;
+    max-width: 320px;
+    border: 1px solid $secondary;
+    border-radius: 3px;
+    padding-left: 10px;
+  }
+
+  &-content {
+    min-height: 150px;
+    max-width: 640px;
+    border: 1px solid $secondary;
+    border-radius: 3px;
+    padding: 10px;
+  }
+}
+
+.scls {
+  display: flex;
+
+  &__link {
+    + .scls__link {
+      margin-left: 10px;
+    }
+  }
+}

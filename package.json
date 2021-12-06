@@ -1,13 +1,13 @@
 {
-  "name": "frutitop",
+  "name": "web-cv",
   "version": "0.0.1",
-  "description": "This project was initialized with node v12.16.3 and npm 6.14.4",
+  "description": "Web version of my CV",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Stefan M.",
-  "license": "ISC",
+  "author": "Stefan Markic",
+  "license": "GNU General Public License v3.0",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
