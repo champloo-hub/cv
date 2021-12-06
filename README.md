@@ -17,7 +17,7 @@ Once you install NVM, run `nvm list` command. This will show you all Node versio
 
 ## Running the project
 
-After you run `npm install` command to pull all the necessary NPM packages, you have three commands available:
+After you run `npm install` command to pull all the necessary NPM packages, as well as `npm install gulp -g` command to install Gulp for the current Node version, you have three commands available:
 - `gulp develop`
 - `gulp build`
 - `gulp test`
