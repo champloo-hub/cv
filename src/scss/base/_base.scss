@@ -30,12 +30,17 @@ main {
   }
 }
 
-h1, h2, h3 {
-  margin: 10px 0;
-}
-
 h1 {
   font-size: $h1;
+  margin: 0 0 10px;
+
+  @media (min-width: $screen-m) {
+    margin: 10px 0;
+  }
+}
+
+h2, h3 {
+  margin: 10px 0;
 }
 
 h2 {

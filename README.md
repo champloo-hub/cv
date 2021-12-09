@@ -32,7 +32,7 @@ To make sure that everything is in order before deploying to production, you can
 
 If you only wish to check the HTML templates from the end user's perspective, it is highly recommended that you do it by running `gulp test` command in order to get the full experience, rather than just opening HTML files from `dist` folder directly on your file system. The reason for this is that JavaScript will not work from local file system due to security reasons, which is why `gulp test` command opens up a dedicated port and runs a localhost on your system.
 
-## Some of the project image previews
+## Screenshots
 
 ### Small screen devices
 

@@ -11,6 +11,7 @@
 
   &__profile {
     position: relative;
+    color: $primary;
     padding-left: 40px;
 
     &:before {
@@ -63,11 +64,17 @@
         &.header-nav-open {
           overflow: hidden;
 
-          .header-nav {
-            top: 84px;
-            bottom: 0;
-            opacity: 1;
-            transition: all .5s;
+          .header {
+            &-nav {
+              top: 84px;
+              bottom: 0;
+              opacity: 1;
+              transition: all .5s;
+            }
+
+            &__profile {
+              visibility: hidden;
+            }
           }
         }
       }

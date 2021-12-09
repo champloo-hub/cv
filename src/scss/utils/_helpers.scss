@@ -15,6 +15,16 @@
   }
 }
 
+// Display
+.d {
+  &-f { display: flex !important }
+}
+
+// Flex
+.f {
+  &-col { flex-direction: column !important; }
+}
+
 // Background Colors
 .bg {
   &-light-brown { background-color: $light-brown  !important; }
@@ -29,8 +39,14 @@
   &-c { text-align: center; }
 }
 
-// Distances and Spacings
+// Margins
 .m {
-  &t20 { margin-top: 20px !important;}
-  &y20 { margin: 20px 0   !important;}
+  // Vertical margins
+  &y20 { margin: 20px 0   !important; }
+
+  // Top margins
+  &t20 { margin-top: 20px !important; }
+
+  // Left margins
+  &l10 { margin-left: 10px !important; }
 }

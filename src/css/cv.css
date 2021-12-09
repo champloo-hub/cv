@@ -68,11 +68,15 @@ main {
       width: 1000px;
       margin: 0 auto; } }
 
-h1, h2, h3 {
-  margin: 10px 0; }
-
 h1 {
-  font-size: 40px; }
+  font-size: 40px;
+  margin: 0 0 10px; }
+  @media (min-width: 768px) {
+    h1 {
+      margin: 10px 0; } }
+
+h2, h3 {
+  margin: 10px 0; }
 
 h2 {
   font-size: 18px; }
@@ -93,8 +97,8 @@ h6 {
   font-weight: 400; }
 
 .icon-s {
-  height: 22px;
-  width: 22px; }
+  height: 20px;
+  width: 20px; }
 
 .scroll-top {
   position: absolute;
@@ -103,6 +107,7 @@ h6 {
   z-index: 1;
   height: 30px;
   width: 30px;
+  background-color: #f3f3f3;
   background-image: url("../img/back-to-top.svg");
   background-size: 50%;
   border: 1px solid #c7c7c7;
@@ -117,7 +122,8 @@ h6 {
   font-weight: 700;
   padding: 0 10px;
   border: 1px solid #c7c7c7;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
 
 .profile-nav {
   display: flex;
@@ -157,6 +163,7 @@ h6 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); }
   .header__profile {
     position: relative;
+    color: #000;
     padding-left: 40px; }
     .header__profile:before {
       content: '';
@@ -195,6 +202,8 @@ h6 {
         bottom: 0;
         opacity: 1;
         transition: all .5s; }
+      body.header-nav-open .header__profile {
+        visibility: hidden; }
     .header-nav__item {
       font-size: 22px;
       color: #000; }
@@ -239,12 +248,11 @@ h6 {
 
 .main {
   position: relative;
-  padding: 10px 10px 20px; }
+  padding: 20px 10px 20px; }
   @media (min-width: 768px) {
     .main {
       display: flex;
-      align-items: center;
-      padding: 20px 10px; } }
+      align-items: center; } }
 
 .headline {
   font-size: 18px;
@@ -400,7 +408,8 @@ h6 {
     margin-left: 10px; }
 
 .experience {
-  position: relative; }
+  position: relative;
+  margin: 20px 0; }
   .experience:after {
     content: '';
     position: absolute;
@@ -507,6 +516,12 @@ h6 {
   .hidden-s {
     display: none !important; } }
 
+.d-f {
+  display: flex !important; }
+
+.f-col {
+  flex-direction: column !important; }
+
 .bg-light-brown {
   background-color: #eea302 !important; }
 
@@ -525,10 +540,13 @@ h6 {
 .txt-c {
   text-align: center; }
 
+.my20 {
+  margin: 20px 0   !important; }
+
 .mt20 {
   margin-top: 20px !important; }
 
-.my20 {
-  margin: 20px 0   !important; }
+.ml10 {
+  margin-left: 10px !important; }
 
 /*# sourceMappingURL=cv.css.map */

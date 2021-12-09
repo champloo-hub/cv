@@ -19,10 +19,10 @@
   <div class="app">
     <div id="wrapper" class="wrapper">
       <header class="header">
-        <div class="header__profile">
+        <a class="header__profile" href="index.html" title="Home page">
           <h4>Stefan Markić</h4>
-          <h5>Frontend Developer, CSS Master</h5>
-        </div>
+          <h5>Layout Frontend Developer</h5>
+        </a>
 
         <div class="header__menu-s visible-s">
           <span class="header__menu-s-bar"></span>
@@ -32,7 +32,7 @@
 
         <ul class="header__menu-ml hidden-s">
           <li class="header__menu-ml-item">
-            <a class="header__menu-ml-link" href="docs/Stefan_Markic_Frontend_Developer_CSS_Master_Resume.pdf" title="Download CV">Download CV</a>
+            <a class="header__menu-ml-link" href="docs/Stefan_Markic_Layout_Frontend_Developer_Resume.pdf" target="_blank" title="Download CV">Download CV</a>
           </li>
           <li class="header__menu-ml-item">
             <a class="header__menu-ml-link" href="skills.html" title="Skills and Expertise">Skills and Expertise</a>
@@ -84,14 +84,21 @@
 
         <div class="footer__item">
           <div class="footer__head">Follow Me</div>
-          <a class="footer__link" href="https://www.linkedin.com/in/stefm/" target="_blank" title="LinkedIn">
-            <img class="footer__img icon-s" src="img/linkedin.webp" alt="LinkedIn">
-          </a>
+
+          <div class="d-f">
+            <a class="footer__link" href="https://www.linkedin.com/in/stefm/" target="_blank" title="LinkedIn">
+              <img class="footer__img icon-s" src="img/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a class="footer__link ml10" href="https://github.com/champloo-hub" target="_blank" title="GitHub">
+              <img class="footer__img icon-s" src="img/github.svg" alt="GitHub">
+            </a>
+          </div>
         </div>
 
         <div class="footer__item">
-          <div class="footer__copy">&copy; 2021 by <a class="footer__link-s" href="index.html" title="Stefan Markić">Stefan Markić</a></div>
-          <h6>Layout Frontend Developer, CSS Master</h6>
+          <div class="footer__copy">&copy; 2021 by <a class="footer__link-s" href="index.html" title="Home page">Stefan Markić</a></div>
+          <h6>Layout Layout Frontend Developer</h6>
         </div>
 
         <a class="scroll-top" href="#page-top" title="Back to Top"></a>
@@ -99,7 +106,7 @@
     </div>
 
     <nav class="header-nav visible-s">
-      <a class="header-nav__item" href="docs/Stefan_Markic_Frontend_Developer_CSS_Master_Resume.pdf" title="Download CV">Download CV</a>
+      <a class="header-nav__item" href="docs/Stefan_Markic_Layout_Frontend_Developer_Resume.pdf" target="_blank" title="Download CV">Download CV</a>
       <a class="header-nav__item" href="skills.html" title="Skills and Competencies">Skills and Competencies</a>
       <a class="header-nav__item" href="education.html" title="Education">Education</a>
       <a class="header-nav__item" href="work.html" title="Work Experience">Work Experience</a>
