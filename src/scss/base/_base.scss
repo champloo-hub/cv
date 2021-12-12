@@ -57,8 +57,12 @@ h4 {
 }
 
 h5 {
-  font-size: h5;
+  font-size: $h5-s;
   font-weight: $font-weight-normal;
+
+  @media (min-width: 851px) {
+    font-size: $h5;
+  }
 }
 
 h6 {
