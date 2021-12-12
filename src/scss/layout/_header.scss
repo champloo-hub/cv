@@ -116,21 +116,29 @@
   &__menu-ml {
     display: flex;
     align-items: center;
+    padding-left: 20px;
 
     &-item {
       display: flex;
       height: 24px;
       align-items: center;
 
+      padding: 0 10px;
+
+      &:first-of-type { padding-left: 0; }
+      &:last-of-type { padding-right: 0; }
+
       + .header__menu-ml-item {
         border-left: 1px solid $primary;
-        padding-left: 10px;
-        margin-left: 10px;
       }
     }
 
     &-link {
       color: $primary;
+
+      @media (max-width: 850px) {
+        font-size: 12px;
+      }
 
       @media (min-width: $screen-l) {
         font-size: 16px;

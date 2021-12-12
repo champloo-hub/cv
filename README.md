@@ -1,4 +1,4 @@
-# Web version of my CV
+# Web version of my resume
 
 ## Setting up your system
 

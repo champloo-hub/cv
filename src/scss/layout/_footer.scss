@@ -18,8 +18,12 @@
   }
 
   &__head {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: $font-weight-bold;
+
+    @media (min-width: 851px) {
+      font-size: 17px;
+    }
 
     @media (min-width: $screen-l) {
       font-size: 18px;
@@ -28,8 +32,12 @@
 
   &__tel,
   &__link {
-    font-size: 16px;
+    font-size: 14px;
     color: $primary;
+
+    @media (min-width: 851px) {
+      font-size: 16px;
+    }
   }
 
   &__copy,
